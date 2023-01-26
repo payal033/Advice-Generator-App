@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+
+:root {
+    --neon-green: hsl(150, 100%, 66%);
+    --light-cyan: hsl(193, 38%, 86%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: var(--dark-grayish-blue);
+    width: 27%;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.advice {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.advice-id {
+    margin: 0;
+    padding: 0;
+}
+
+.advice-id {
+    color: var(--neon-green);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+.advice-text {
+    color: var(--light-cyan);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.line {
+    width: 100%;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--neon-green);
+    border: none;
+    border-color: var(--neon-green);
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.random-btn {
+    margin-top: -25px;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 25px  var(--neon-green); 
+}
+
+
+.btn > img {
+    width: 50%;
+    height: 50%;
+}
+
+
+.attribution {
+    font-size: 12px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 2%;
+    left: 40%;
+    right: 40%;
+    color: var(--light-cyan);
+}
+
+.attribution a {
+  color: var(--neon-green);
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50%;
+    }
+
+    
+    .attribution { 
+        font-size: 13px; 
+        text-align: center; 
+        position: fixed;
+        bottom: 2%;
+        left: 10%;
+        right: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 450px ) and (max-width: 600px) {
+
+    .container {
+        width: 60%;
+        margin-left: 20%;
+       margin-bottom: 20%;
+       margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 600px ) and (max-width: 900px) {
+
+    .container {
+        width: 50%;
+        margin-left: 25%;
+       margin-bottom: 25%;
+       margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 900px ) and (max-width: 1200px) {
+
+    .container {
+        width: 40%;
+        margin-left: 30%;
+       margin-bottom: 30%;
+       margin-top: 25%;
+    }
+}
+
